@@ -35,5 +35,20 @@ body.dark .service { background: #2a2a2a; }
 <div class="service">💡 <b>Tech Help</b> - I help you learn GitHub, coding & more</div>
 </div>
 <p>Made with ❤️ in Ghana | Call: 0557731096</p>
+</script>
+  </body>
+  <h2>📩 Contact Me</h2>
+<input id="name" placeholder="Your Name" style="width:90%;padding:12px;margin:5px;border-radius:10px;border:1px solid #ccc;">
+<br>
+<textarea id="msg" placeholder="Your Message" style="width:90%;padding:12px;margin:5px;border-radius:10px;border:1px solid #ccc;height:80px;"></textarea>
+<br>
+<button onclick="sendMsg()" style="background:#25D366;color:white;padding:12px 25px;border:none;border-radius:25px;font-weight:bold;">Send on WhatsApp</button>
+<script>
+function sendMsg(){
+  var n = document.getElementById('name').value;
+  var m = document.getElementById('msg').value;
+  window.open("https://wa.me/233557731096?text=" + encodeURIComponent("Hi Francis! I'm " + n + ". " + m));
+}
+</script>
 </body>
 </html>
