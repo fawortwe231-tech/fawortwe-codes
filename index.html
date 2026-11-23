@@ -3,22 +3,36 @@
 <head>
 <title>Francis - My Website</title>
 <style>
-body { font-family: Arial; text-align: center; background: #f0f8ff; margin: 0; padding: 40px 20px; }
-h1 { color: #1a73e8; font-size: 40px; }
+body { font-family: Arial; text-align: center; background: #f0f8ff; margin: 0; padding: 40px 20px; transition: 0.3s; }
+body.dark { background: #121212; color: white; }
+body.dark .card { background: #1e1e1e; color: white; }
+body.dark p { color: #ddd; }
+h1 { color: #1a73e8; font-size: 38px; margin: 10px; }
 p { color: #333; font-size: 18px; }
-.card { background: white; max-width: 500px; margin: 20px auto; padding: 30px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+.card { background: white; max-width: 550px; margin: 20px auto; padding: 30px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+.photo { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 4px solid #1a73e8; }
 .btn { display: inline-block; background: #1a73e8; color: white; padding: 12px 25px; text-decoration: none; border-radius: 25px; margin: 5px; font-weight: bold; }
 .btn2 { background: #25D366; }
+.service { background: #f0f8ff; padding: 15px; margin: 10px 0; border-radius: 10px; text-align: left; }
+body.dark .service { background: #2a2a2a; }
+.toggle { position: fixed; top: 15px; right: 15px; padding: 10px 15px; border-radius: 20px; border: none; cursor: pointer; background: #333; color: white; }
 </style>
 </head>
 <body>
+<button class="toggle" onclick="document.body.classList.toggle('dark')">🌙 Dark Mode</button>
+
 <div class="card">
+<img class="photo" src="WhatsApp Image 2026-11-23 at 7.22.07 AM.jpeg">
 <h1>👋 Hello! I'm Francis</h1>
-<p>Welcome to my first website.</p>
-<p>I'm learning to build websites with GitHub Pages.</p>
+<p>Welcome to my website. I'm learning to build websites with GitHub Pages.</p>
 <br>
 <a class="btn" href="https://github.com/fawortwe231-tech">My Projects</a>
 <a class="btn btn2" href="https://wa.me/233557731096">Chat on WhatsApp</a>
+
+<h2 style="margin-top:30px;">💼 What I Do</h2>
+<div class="service">🌐 <b>Websites</b> - I build simple, beautiful websites like this one</div>
+<div class="service">📱 <b>WhatsApp Business Setup</b> - I help businesses get online</div>
+<div class="service">💡 <b>Tech Help</b> - I help you learn GitHub, coding & more</div>
 </div>
 <p>Made with ❤️ in Ghana | Call: 0557731096</p>
 </body>
